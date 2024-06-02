@@ -1,7 +1,10 @@
 from typing import List
 from pydantic import BaseModel
 
+
+# Define data models
 class Entrepreneur(BaseModel):
+    user_id: str
     background: str
     experience: str
     skills: List[str]
@@ -12,7 +15,9 @@ class Entrepreneur(BaseModel):
     preferredCommunication: str
     embedding: List[float] = None
 
+
 class Mentor(BaseModel):
+    user_id: str
     professionalBackground: str
     industryExperience: str
     expertiseAreas: List[str]
@@ -23,7 +28,9 @@ class Mentor(BaseModel):
     preferredMentoringMethods: str
     embedding: List[float] = None
 
+
 class Investor(BaseModel):
+    user_id: str
     investmentBackground: str
     portfolio: List[str]
     industryFocus: List[str]

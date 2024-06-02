@@ -1,3 +1,5 @@
 pinecone
 tenacity
 sentence_transformers
+fastapi
+google-cloud-firestore

@@ -1,0 +1,3 @@
+pinecone
+tenacity
+sentence_transformers
